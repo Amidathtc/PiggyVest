@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from "../../../assets/logo.svg"
+import Button1 from '../../static/Button1'
+
 
 function Header() {
   return (
@@ -15,9 +17,9 @@ function Header() {
           <div>Resources</div>
         </Right>
         <Left>
-          <Button1>Sign in</Button1>
-          <Button2>Create free account</Button2>
-
+          <Button1 title= "Sign in" cc="rgb(12,24,37)" bg= "white"/>
+          <Button1 title= "Create Free Account" cc="white" bg= "rgb(12,24,37)"/>
+          
         </Left>
       </Wrapper>
     </Container>
@@ -25,19 +27,9 @@ function Header() {
 }
 
 export default Header
-const Button1 = styled.div`
-width: 30%;
-height: 70%;
-/* background-color: blue; */
-border-radius: 5%;
-display: flex;
-justify-content: space-between;
-align-content: center;
 
 
-`
-const Button2 = styled.div`
-`
+
 
 const Left = styled.div`
 width: 400px;
